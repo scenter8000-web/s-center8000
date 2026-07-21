@@ -13,11 +13,28 @@
     ...(session() ? { Authorization: `Bearer ${session().access_token}` } : {}),
     ...(json ? { 'Content-Type': 'application/json' } : {})
   });
-  const api = async (path, options = {}) => {
-    const response = await fetch(`${root}${path}`, { ...options, headers: { ...headers(options.json !== false), ...(options.headers || {}) } });
-    if (!response.ok) throw new Error((await response.text()) || 'Request failed');
-    return response.status === 204 ? null : response.json();
-  };
+const api = async (path, options = {}) => {
+  const response = await fetch(
+    `${root}${path}`,
+    {
+      ...options,
+      headers: {
+        ...headers(options.json !== false),
+        ...(options.headers || {})
+      }
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(await response.text());
+  }
+
+  const text = await response.text();
+
+  if (!text) return null;
+
+  return JSON.parse(text);
+};
   const mapProduct = row => ({ id: row.id, name: row.name, category: row.category, price: row.price, description: row.description, image: row.image_url, tag: row.tag || '' });
   async function refreshProducts() {
     const rows = await api('/rest/v1/products?select=*&order=created_at.desc');
