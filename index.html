@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ku" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5821f" />
+  <title>S Center | Mobile & More</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topline"><span data-i18n="topline">خێرا بگەیەنین • دڵنیایی گۆڕینەوە • کوالێتی بەرز</span><a href="tel:+9647519199000">+964 751 919 9000</a></div>
+  <header class="nav-wrap">
+    <a class="brand" href="#home" aria-label="S Center home"><img src="assets/s-center-logo.png" alt="S Center logo"><span>S Center</span></a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav><a href="#home" data-i18n="navHome">سەرەکی</a><a href="#about" data-i18n="navAbout">دەربارەی ئێمە</a><a href="#products" data-i18n="navProducts">بەرهەمەکان</a><a href="#contact" data-i18n="navContact">پەیوەندیمان پێوە بکە</a></nav>
+    <div class="nav-actions"><div class="language"><button data-lang="ku" class="active">ک</button><button data-lang="ar">ع</button><button data-lang="en">EN</button></div><button class="admin-link" id="adminOpen" title="Admin">⌘</button></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy"><p class="eyebrow" data-i18n="eyebrow">S CENTER • ERBIL</p><h1 data-i18n="heroTitle">یەک جار بکڕە،<br><em>بۆ هەمیشە دڵنیابە</em></h1><p data-i18n="heroText">نوێترین ئایفۆن و ئەندرۆید، نوێ و دەستی دووەم — بە گەرەنتی گۆڕینەوە و خزمەتگوزارییەکی دڵنیایی‌بەخش.</p><div class="hero-buttons"><a class="button primary" href="#products" data-i18n="explore">گەڕان بەدوای مۆبایل</a><a class="button ghost" href="#contact" data-i18n="visit">سەردانی لقەکانمان بکە</a></div></div>
+      <div class="showreel" aria-label="Phone showreel">
+        <div class="reel-label"><span class="pulse"></span><span data-i18n="nowPlaying">ئێستا پیشان دەدرێت</span></div>
+        <div class="phone phone-back"><span></span><i></i><b></b></div><div class="phone phone-main"><span></span><i></i><b></b><strong>18<br><small>PRO</small></strong></div><div class="phone phone-front"><span></span><i></i><b></b></div>
+        <div class="reel-footer"><span> iPhone 18 → 13 Pro Max</span><button id="switchReel"><span>▶</span> <b data-i18n="playReel">ڤیدیۆی Galaxy</b></button></div>
+      </div>
+      <div class="scroll-cue">SCROLL <span></span></div>
+    </section>
+
+    <section class="trust-strip"><div><b>2021</b><span data-i18n="since">لە ساڵی</span></div><div><b>100%</b><span data-i18n="original">ڕەسەن و پشکنراو</span></div><div><b>24/7</b><span data-i18n="open">کراوەین بۆ ئێوە</span></div><div><b>2</b><span data-i18n="branches">لق لە هەولێر</span></div></section>
+
+    <section class="section about" id="about"><div class="about-art"><div class="circle">S</div><div class="warranty">✓<br><small data-i18n="warranty">گەرەنتی<br>گۆڕینەوە</small></div></div><div class="section-copy"><p class="eyebrow" data-i18n="aboutKicker">داستانی ئێمە</p><h2 data-i18n="aboutTitle">دەربارەی ئێس سەنتەر</h2><div class="about-text" data-i18n="aboutText">لە ساڵی ٢٠٢١ەوە، ئێس سەنتەر بووەتە ناوێکی متمانەپێکراو بۆ فرۆشتنی مۆبایل. لای ئێمە هەموو جۆرەکانی مۆبایلی ئایفۆن و ئەندرۆید دەست دەکەوێت، هەم نوێ و هەم دەستی دووەم، بە دڵنیایی و کوالێتییەکی بەرز.<br><br>جیاوازی ئێمە لە سەنتەرەکانی تر لەوەدایە کە گەرەنتیمان گۆڕینەوەیە — ئەگەر مۆبایلێکت لە ئێمە کڕیبێت و کێشەیەکی هەبوو، بەبێ دوودڵی مۆبایلەکەت بۆ دەگۆڕینەوە.<br><br>هەموو پێداویستییەکانی مۆبایلەکەتیش لای ئێمە دەست دەکەوێت: چارجەر، وایەر، کەیس و پارێزەری شاشە، بە باشترین کوالێتی و جیاوازترین شێواز.</div><a class="text-link" href="#contact" data-i18n="learn">زیاتر بزانە ←</a></div></section>
+
+    <section class="section products" id="products"><div class="heading-row"><div><p class="eyebrow" data-i18n="collection">کۆمەڵەی تایبەت</p><h2 data-i18n="productTitle">ئەوەی دەیگەڕێیت،<br>لێرەیە.</h2></div><div class="tabs" role="tablist"><button class="active" data-category="iphone"> <span data-i18n="iphone">ئایفۆنەکان</span></button><button data-category="android">◎ <span data-i18n="android">ئەندرۆید</span></button><button data-category="accessory">◈ <span data-i18n="accessories">پێداویستی مۆبایل</span></button></div></div><div id="productGrid" class="product-grid"></div><div class="catalogue-note"><span>✦</span><p data-i18n="catalogueNote">هەموو نرخ و بەردەستبوونەکان دەتوانن بگۆڕدرێن. بۆ زانیاری نوێترین بەردەستبوون پەیوەندیمان پێوە بکە.</p><a href="#contact" data-i18n="contactNow">پەیوەندی ئێستا →</a></div></section>
+
+    <section class="contact" id="contact"><div><p class="eyebrow" data-i18n="visitKicker">بەخێربێیت</p><h2 data-i18n="contactTitle">لە کوێ دەتوانیت<br>بدۆزیتەوە؟</h2><p data-i18n="contactText">هەموو ڕۆژەکانی هەفتە کراوەین، بۆیە هەرکات پێویستت بوو، ئێمە لەلای تۆین.</p><div class="phones"><a href="tel:+9647519199000">+964 751 919 9000</a><a href="tel:+9647519198000">+964 751 919 8000</a></div></div><div class="branches"><article><span>01</span><h3 data-i18n="branchOne">لقی یەکەم</h3><p data-i18n="addressOne">هەولێر — بازاڕی لەنگەی نوێ، بینای E<br>دوکانی ژمارە ١٣</p><a href="https://maps.google.com/?q=Erbil" target="_blank" rel="noreferrer" data-i18n="map">شوێن لە نەخشە →</a></article><article><span>02</span><h3 data-i18n="branchTwo">لقی دووەم</h3><p data-i18n="addressTwo">هەولێر — بەختیاری، ٢٠ی یەکەم<br>نزیک قوتابخانەی شەهید کۆچەر (شنروێ)</p><a href="https://maps.google.com/?q=Bakhtiari,+Erbil" target="_blank" rel="noreferrer" data-i18n="map">شوێن لە نەخشە →</a></article></div></section>
+  </main>
+  <footer><img src="assets/s-center-logo.png" alt="S Center"><span>© 2026 S Center — <span data-i18n="footer">مۆبایل و متمانە دەبنە یەک.</span></span><a href="#home">↑</a></footer>
+
+  <div class="modal" id="adminModal" aria-hidden="true"><div class="modal-card"><button class="close" data-close>×</button><div id="loginPanel"><p class="eyebrow">S CENTER / PRIVATE</p><h2>Admin portal</h2><p>بەڕێوەبردنی بەرهەمەکانت لێرەیە.</p><form id="loginForm"><label>Email<input type="email" id="email" required></label><label>Password<input type="password" id="password" required></label><button class="button primary" type="submit">Log in</button><small id="loginError"></small></form></div><div id="dashboard" hidden><div class="dashboard-head"><div><p class="eyebrow">S CENTER / ADMIN</p><h2>Products</h2></div><button class="button primary" id="addProduct">+ Add product</button></div><div id="adminProducts"></div><button class="logout" id="logout">Log out</button></div></div></div>
+  <div class="modal" id="editorModal" aria-hidden="true"><div class="modal-card editor"><button class="close" data-close>×</button><h2 id="editorTitle">Add product</h2><form id="productForm"><input type="hidden" id="productId"><label>Name<input id="pName" required></label><label>Category<select id="pCategory"><option value="iphone">iPhone</option><option value="android">Android</option><option value="accessory">Accessory</option></select></label><label>Price (IQD)<input id="pPrice" required></label><label>Description<textarea id="pDescription" rows="3" required></textarea></label><label>Image URL<input id="pImage" required></label><button class="button primary" type="submit">Save product</button></form></div></div>
+  <script src="app.js"></script>
+  <script src="enhancements.js"></script>
+  <script src="supabase-config.js"></script>
+  <script src="supabase-store.js"></script>
+</body>
+</html>
